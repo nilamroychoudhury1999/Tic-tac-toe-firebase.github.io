@@ -9,16 +9,17 @@ var box1 = document.getElementById("box1"),
     box9 = document.getElementById("box9");
 
 // Your web app's Firebase configuration
-            var firebaseConfig = {
-                apiKey: "AIzaSyA3EM1Uabi8BiVGLbkiFraaGo_9VdcZW3A",
-                authDomain: "kolk-59615.firebaseapp.com",
-                projectId: "kolk-59615",
-                storageBucket: "kolk-59615.appspot.com",
-                messagingSenderId: "747357026461",
-                appId: "1:747357026461:web:961f235e02ee699924bc74"
-            };
-            // Initialize Firebase
-            firebase.initializeApp(firebaseConfig);
+
+var firebaseConfig = {
+    apiKey: "AIzaSyA3EM1Uabi8BiVGLbkiFraaGo_9VdcZW3A",
+    authDomain: "kolk-59615.firebaseapp.com",
+    projectId: "kolk-59615",
+    storageBucket: "kolk-59615.appspot.com",
+    messagingSenderId: "747357026461",
+    appId: "1:747357026461:web:961f235e02ee699924bc74"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
 
 var tictactoeState = database.ref('board/box1');
